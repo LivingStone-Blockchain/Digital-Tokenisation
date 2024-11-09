@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tokenized Asset Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <h1>FinDeFi</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+      </ul>
+    </nav>
+    <div class="wallet-connection">
+      <button id="connect-wallet">Connect Wallet</button>
+      <p id="wallet-address"></p>
+      <button id="send-tokens-button">Send Tokens</button>
+      <p id="wallet-balance">Balance: <span id="balance-display">0</span> Tokens</p>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Unlock Real-World Assets with DeFi</h2>
+      <p>Transform traditional assets into digital tokens to trade, stake, and earn rewards.</p>
+      <a href="#features" class="cta-button">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <h2>Our Features</h2>
+    <div class="feature-card">
+      <h3>Asset Tokenization</h3>
+      <p>Convert stocks and bonds into digital assets.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Secure Wallet</h3>
+      <p>Store, manage, and trade your digital assets safely.</p>
+    </div>
+    <div class="feature-card">
+      <h3>DeFi Rewards</h3>
+      <p>Earn by staking and yield farming in liquidity pools.</p>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="how-it-works">
+    <div class="container">
+      <h2>How It Works</h2>
+      <!-- Steps Section -->
+      <div class="steps">
+        <div class="step">Step 1: Tokenize Assets</div>
+        <div class="step">Step 2: Trade and Stake</div>
+        <div class="step">Step 3: Earn Rewards</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 FinDeFi - All Rights Reserved</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.0/dist/ethers.umd.min.js"></script>
+  <script src="app.js"></script>
+  
+</body>
+</html>

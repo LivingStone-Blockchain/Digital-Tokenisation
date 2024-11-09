@@ -1,0 +1,199 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background: linear-gradient(to bottom right, #1a1a2e, #e94560); /* Smooth gradient background */
+  transition: background 0.5s ease-in-out; /* Smooth transition for background color changes */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 15px 30px;
+  color: white;
+  transition: all 0.3s ease; /* Smooth transition for all navbar elements */
+}
+
+.navbar .logo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar nav ul li a:hover {
+  color: #ff9900;
+}
+
+/* Wallet connection area */
+.wallet-connection {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s ease;
+}
+
+.wallet-connection #connect-wallet {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.wallet-connection #connect-wallet:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.wallet-connection #wallet-balance {
+  margin-left: 10px;
+  font-size: 1rem;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to bottom right, #1a1a2e, #e94560); /* Hero gradient */
+  color: #fff;
+  padding: 150px 20px;
+  text-align: center;
+  transition: background 0.5s ease; /* Smooth transition for hero background */
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: auto;
+  transition: transform 0.3s ease; /* Smooth transition for hero content */
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e94560;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0f3460;
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Features Section */
+.features {
+  background: #f4f4f4;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.feature-card {
+  display: inline-block;
+  width: 30%;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  margin: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* "How It Works" Section */
+.how-it-works {
+  background-color: #f4f4f4;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.how-it-works .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.how-it-works h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.step {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+  background: #1a1a2e;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  transition: background 0.3s ease; /* Smooth transition for footer */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .navbar nav ul {
+    display: block;
+    text-align: center;
+  }
+
+  .steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
